@@ -1734,8 +1734,8 @@ Zotero.ZotFile = {
             //var filename = filename.replace(/ {2,}/g, ' ');
             filename = Zotero.Utilities.trimInternal(filename);
 
-            // replace blanks with '_' if option selected
-            if (this.prefs.getBoolPref("replace_blanks"))  filename = filename.replace(/ /g, '_');
+            // replace blanks with '' if option selected
+            if (this.prefs.getBoolPref("replace_blanks"))  filename = filename.replace(/ /g, '');
 
             // set to lower case
             if (this.prefs.getBoolPref("lower_case"))  filename = filename.toLowerCase();
